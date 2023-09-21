@@ -5,7 +5,7 @@ const bottomTextInput = document.querySelector("#bottomText");
 const generateMemeButton = document.querySelector("#generateBtn");
 const imageContainer = document.querySelector(".flex-container");
 
-//adding local storage for memes
+//local storage for memes
 const localMemes = JSON.parse(localStorage.getItem("memes")) || [];
 
 //retrieve memes from local storage
@@ -86,8 +86,16 @@ function generateMeme(imgUrl, topText, bottomText){
     // localStorage.setItem("memes", JSON.stringify(localMemes));
 
     //fit text into text section to account for long text
-    fitText(text1container, text1);
-    fitText(text2container, text2);
+    //wait 1 second for image to load
+    image.onload = function() {
+        fitText(text1container, text1);
+        fitText(text2container, text2);
+    }
+
+    // setTimeout(function(){
+    //     fitText(text1container, text1);
+    //     fitText(text2container, text2);
+    // }, 200);
 
     //reset form
     imageUrlInput.value = "";
