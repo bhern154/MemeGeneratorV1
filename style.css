@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Poppins, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    justify-content:center;
+    text-align: center;
+}
+.label-input{
+    /* width: 100vw; */
+    text-align: justify;
+}
+h1{
+    font-size: 50px;
+    color: rgb(51, 163, 150);
+    letter-spacing: 5px;
+    font-weight: 600;
+    line-height: 50px;
+}
+h2{
+    font-weight: 300;
+}
+input {
+    width: 96vw;
+    padding: 20px;
+    margin: 2vw;
+    margin-bottom: 0;
+    border: 2px black solid;
+}
+input[type="text"]{
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: black;
+    text-transform: uppercase; 
+}
+::placeholder{
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: rgb(51, 163, 150);
+}
+button{
+    width: 96vw;
+    padding: 10px;
+    margin: 2vw;
+    margin-bottom: 0;
+    font-size: 35px;
+    letter-spacing: 2px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+button:hover {
+    background-color: rgb(51, 163, 150);
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+} 
+.flex-item {
+    flex: 48%;
+    margin: 1%;
+    max-width: 48%;
+    position: relative;
+    font-size: 50px;
+    font-weight: 900;
+    color: white;
+    -webkit-text-stroke: 1px black;
+    text-transform: uppercase;
+}
+img{
+    width: 100%;
+    object-fit: contain;
+    margin-bottom:-41px;
+}
+.top-text{
+    position: absolute;
+    top:20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family:impact;
+    width: 44vw;
+    height: 20%;
+    /* background-color: blue; */
+}
+.bottom-text{
+    position: absolute;
+    bottom: 75px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family:impact;
+    width: 44vw;
+    height: 20%;
+    /* background-color: gold; */
+}
+/* align bottom text to the bottom of the parent div */
+.text{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 44vw;
+}
+.deleteBtn{
+    width: 100%;
+    background-color: red;
+    border: none;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    font-weight: 900;
+    -webkit-text-stroke: 0px;
+}
+/* Chrome, Safari, Edge, Opera input styling */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+textarea:focus, input:focus{
+  outline: none;
+}
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 1300px) {
+    .flex-item {
+      flex: 100%;
+      margin: 10px;
+      margin-bottom: 0;
+      max-width: 100%;
+    }
+    .top-text{
+        top:20px;
+        width: 95vw;
+        height: 20%;
+    }
+    .bottom-text{
+        left: 50%;
+        width: 95vw;
+        height: 20%;
+    }
+    .text{
+        width: 95vw;
+    }
+  }
