@@ -10,7 +10,6 @@ body{
     text-align: center;
 }
 .label-input{
-    /* width: 100vw; */
     text-align: justify;
 }
 h1{
@@ -19,9 +18,11 @@ h1{
     letter-spacing: 5px;
     font-weight: 600;
     line-height: 50px;
+    margin-top: 20px;
 }
 h2{
     font-weight: 300;
+    margin-top: 20px;
 }
 input {
     width: 96vw;
@@ -88,7 +89,6 @@ img{
     font-family:impact;
     width: 44vw;
     height: 20%;
-    /* background-color: blue; */
 }
 .bottom-text{
     position: absolute;
@@ -98,7 +98,6 @@ img{
     font-family:impact;
     width: 44vw;
     height: 20%;
-    /* background-color: gold; */
 }
 /* align bottom text to the bottom of the parent div */
 .text{
@@ -127,7 +126,7 @@ input::-webkit-inner-spin-button {
 textarea:focus, input:focus{
   outline: none;
 }
-/* Responsive layout - makes a one column-layout instead of a two-column layout */
+/* Responsive layout - makes a one column-layout on mobile instead of a two-column layout */
 @media (max-width: 1300px) {
     .flex-item {
       flex: 100%;
